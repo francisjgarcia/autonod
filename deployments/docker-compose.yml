@@ -1,0 +1,15 @@
+version: "3.6"
+services:
+  app_autonod:
+    container_name: app_autonod
+    build:
+      context: ../
+      dockerfile: deployments/Dockerfile
+    image: ${IMAGE_API_NAME}:1.0
+    volumes:
+      - ../app:/usr/src/app:ro
+      - ../container_data/database:/database
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python app.py
+    restart: always
