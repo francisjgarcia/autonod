@@ -8,7 +8,7 @@ services:
     image: ${IMAGE_API_NAME}:1.0
     volumes:
       - ../app:/usr/src/app:ro
-      - ../container_data/database:/database
+      - ../data/database:/database
     environment:
       - PYTHONUNBUFFERED=1
     command: python app.py
