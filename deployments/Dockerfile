@@ -2,7 +2,7 @@ FROM python:3.8.5-slim-buster
 
 LABEL version="1.0"
 
-LABEL maintainer Francis J. Garcia <francisjgarcia94@gmail.com>
+LABEL maintainer Francis J. Garcia <contacto@francisjgarcia.es>
 
 RUN ln -fs /usr/share/zoneinfo/Europe/Madrid /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
