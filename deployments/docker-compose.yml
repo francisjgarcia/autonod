@@ -1,7 +1,7 @@
 version: "3.6"
 services:
-  app_autonod:
-    container_name: app_autonod
+  autonod:
+    container_name: autonod
     build:
       context: ../
       dockerfile: deployments/Dockerfile
